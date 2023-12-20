@@ -30,13 +30,13 @@ jobs:
       run: |
         ngrok tunnel --label edge=edghts_2ZnuWPhmuXbgHtsNFSJbIC93o00 http://localhost:5000 &
     - name: Run Tests
-      run: python main.py &
+      run: python Main.py &
 
     - name: Wait 20 minutes
       run: sleep 1200  # 20 minutes = 20 * 60 seconds
 
     - name: Stop main.py
-      run: pkill -f "python main.py"
+      run: pkill -f "python Main.py"
 
     - name: Finalize
       run: |
