@@ -9,5 +9,8 @@ def index():
 @app.route('/home')
 def home():
     return render_template('home.html')
+@app.route('/license')
+def license ():
+    return render_template('LICENSE')
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
