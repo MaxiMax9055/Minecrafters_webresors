@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Выбрать версии для скачивания</title>
+</head>
+<body>
+    {% for versions in list_versions %}
+    <tr>
+     <form name="/download" method="post">
+        <td>
+           <input type="checkbox" name="versions" value="{{versions}}">{{versions}}<br>
+        </td>
+    {% endfor %}
+        <input type="submit" value="Скачать">
+    </form>
+</body>
+</html>
