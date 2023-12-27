@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Выбрать версии для скачивания</title>
 </head>
-<body>
+<body background="fon.png" bgcolor="yellow ">
     {% for versions in list_versions %}
     <tr>
      <form name="/download" method="post">
@@ -13,6 +13,9 @@
         </td>
     {% endfor %}
         <input type="submit" value="Скачать">
+    </form>
+    <form name="/downinst" method="get">
+        <input type="submit" value="Скачать лаунчер">
     </form>
 </body>
 </html>
