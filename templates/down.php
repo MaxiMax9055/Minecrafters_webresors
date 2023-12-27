@@ -16,6 +16,7 @@ if (!file_exists($path)) {
    <title>Download</title>
 </head>
 <body>
-<h1>Спачибо за скачивание</h1>
+<h1>Спасибо за скачивание</h1>
+<a href="home">Домой</a>
 </body>
 </html>
