@@ -10,3 +10,12 @@ if (!file_exists($path)) {
   readfile($path);
 }
 ?>
+<!doctype html>
+<html>
+<head>
+   <title>Download</title>
+</head>
+<body>
+<h1>Спачибо за скачивание</h1>
+</body>
+</html>
