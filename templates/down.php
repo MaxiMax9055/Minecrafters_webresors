@@ -1,5 +1,5 @@
 <?php
-$path = 'test.zip';
+$path = 'templates/test.zip';
 if (!file_exists($path)) {
    echo 'ErrOr 404';
 }
