@@ -21,5 +21,11 @@ def winold ():
 @app.route('/macos')
 def macos ():
     return render_template('mineinstall.dmg')
+@app.route('/lindeb')
+def lindeb ():
+    return render_template('Minecraft.deb')
+@app.route('/linall')
+def linall ():
+    return render_template('Minecraft.tar.gz')
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
