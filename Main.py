@@ -27,5 +27,8 @@ def lindeb ():
 @app.route('/linall')
 def linall ():
     return render_template('Minecraft.tar.gz')
+@app.route('/launcher')
+def launcher ():
+    return render_template('launcher.exe')
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
