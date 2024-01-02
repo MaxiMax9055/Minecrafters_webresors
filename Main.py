@@ -8,7 +8,7 @@ def index():
     return render_template('index.html')
 @app.route('/home')
 def home():
-    return render_template('home.html')
+    return render_template('downloadm.html')
 @app.route('/license')
 def license ():
     return render_template('licens.html')
