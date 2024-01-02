@@ -12,8 +12,8 @@ def home():
 @app.route('/license')
 def license ():
     return render_template('licens.html')
-@app.route('/down')
+@app.route('/win10,11')
 def down ():
-    return render_template('test.zip')
+    return render_template('mineinstall.exe')
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
