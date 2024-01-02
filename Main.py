@@ -13,7 +13,13 @@ def home():
 def license ():
     return render_template('licens.html')
 @app.route('/win10,11')
-def down ():
+def win1011 ():
     return render_template('mineinstall.exe')
+@app.route('/winold')
+def winold ():
+    return render_template('oldinstall.msi')
+@app.route('/macos')
+def macos ():
+    return render_template('mineinstall.dmg')
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
