@@ -3,7 +3,18 @@
 <head>
  <title>Скачать маинкрафт</title>
 </head>
+ <style>
+  .downtext{
+    position:absolute;
+    top:50%
+    left: 50%
+    transform: translate(-50%, -50%);
+}
+ </style>
 <body>
 {% include 'uppanel.html' %}
+<div class="downtext">
+{% include 'downtext.html' %}
+</div>
 </body>
 </html>
