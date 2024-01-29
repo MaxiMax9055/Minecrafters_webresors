@@ -1,95 +1,20 @@
-<!DOCTYPE HTML>
+<doctype html>
 <html>
-  <head>
-    <title>Скачать маинкрафт.</title>
-    <meta http-equiv="refresh" content="5; /">
-  </head>
-  <style>
-    .container{
-      position:absolute;
-      top:50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-  }
-    .over{
-      position:absolute;
-      top:50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-    }
-    </style>
+<head>
+ <title>Скачать маинкрафт</title>
+</head>
+ <style>
+  .downtext{
+    position:absolute;
+    top:50%
+    left: 90%
+    transform: translate(-50%, -50%);
+}
+ </style>
 <body background="static/fon.png">
-<dif class="container">
-<h1>Раздел посвещён скачке маинкрафт.</h1>
-<h4>Выберите раздел ниже:</h4>
-<button>
-<a href="#Licens">ЛИЦЕНЗИОННЫЙ лаунчер</a>
-<a href="#Pirat">ПИРАТСКИЙ лаунчер</a>
-</button>
-<a name="Licens"></a>
-<h2>Лицензионный лаунчер MineCraft.</h2>
-<p>
-Лицензионный лаунчер - это лаунчер разработанный и одобреный лаунчер от MOJANG.<br>
-Плюсы:<br>
-  + Java сама будет установлена на пк для нужной вам версии.<br>
-  + Официальная система скинов.<br>
-  + Возможность заходить на лицензионные сервера, такие как HyPixel и т.д.<br>
-Минусы:<br>
-  - Платная лицензия.<br>
-  - Нет возможности купить в странах СНГ.<br>
-Скачать:<br>
-<h3>Windows:</h3><br>
-<button>
-<a href="/win10,11" download>Windows 10/11</a><br>
-</button>
-<button>
-<a href="/winold" download>Old лаунчер</a><br>
-</button>
-<h3>MacOS:</h3><br>
-<button>
-<a href="/macos" download>MacOS</a><br>
-</button>
-<h3>Bedrock</h3><br>
-<button>
-<a href="https://play.google.com/store/apps/details?id=com.mojang.minecraftpe">Android</a><br>
-</button>
-<button>
-<a href="https://apps.apple.com/us/app/minecraft/id479516143">IOS</a><br>
-</button>
-<h3>Linux</h3><br>
-<button>
-<a href="/lindeb" download>Сборки на DEBIAN</a><br>
-</button>
-<button>
-<a href="https://aur.archlinux.org/packages/minecraft-launcher">Сборки на ARCH</a><br>
-</button>
-<button>
-<a href="/linall" download>Остальное</a><br>
-</button>
-</p>
-<br>
-<br>
-<a name="Pirat"></a><br>
-<h2>НЕ лицензионный лаунчер.</h2><br>
-<p>
-Плюсы:<br>
-  + Бесплатно<br>
-  + много версий<br>
-Минусы:
-  - Нет доступа к лицензионым серверам<br>
-  - Realms не работает<br>
-  - Нет официальной поддержки<br>
-  - Никто не может дать гарантию, что в лаунчерах с интернета нет вирусов и майнеров.<br>
-<button>
-<a href="https://tlauncher.org/">TLauncher</a><br>
-</button>
-<button>
-<a href="/launcher" download>Наш лаунчер</a><br>
-</button>
-</p>
-<button>
-  <a href="/">back</a>
-</button>
-</dif>
+{% include 'uppanel.html' %}
+<div class="downtext">
+{% include 'downtext.html' %}
+</div>
 </body>
 </html>
