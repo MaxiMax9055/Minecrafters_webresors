@@ -30,5 +30,8 @@ def linall ():
 @app.route('/launcher')
 def launcher ():
     return render_template('launcher.exe')
+@app.route('/betacraft')
+def launcher ():
+    return render_template('launcher-1.09_16.exe')
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
