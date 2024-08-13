@@ -28,7 +28,7 @@ jobs:
         ngrok config add-authtoken 2Znr3lrnyYqcock70D2cFFg7Bbr_2UFmtjkNAJh2N9pa2yxh5
     - name: run Ngrok
       run: |
-        ngrok tunnel --label edge=edghts_2ZnuWPhmuXbgHtsNFSJbIC93o00 http://localhost:5000 &
+        ngrok http--domain=supreme-wallaby-assured.ngrok-free.app 5000 &
     - name: Run Tests
       run: python Main.py &
 
